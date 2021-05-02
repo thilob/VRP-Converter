@@ -109,6 +109,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+bin/
+pyvenv.cfg
+.vscode/
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +130,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# CSV-Files
+*.csv
+
+# default user_fix.dat
+user_fix.dat
+lib64
