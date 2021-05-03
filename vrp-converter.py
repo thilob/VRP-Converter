@@ -30,7 +30,7 @@ else:
 
     ausgabe=open(arguments.outputfile, "w")
     ausgabe.write("I\n")
-    ausgabe.write("1101 User-Fixes out of " + str(arguments.inputfile) + "  " + str(datetime.now()) + "\n")
+    ausgabe.write("1101 Version - data cycle 2104, build 20210411, metadata FixXP1101. Copyright (c) 2021 Navigraph, Datasource Jeppesen\n\n")
 
     for zeile in datei:
         zelle=zeile.split(",")
@@ -42,9 +42,9 @@ else:
         airport= zelle[2][:4]
         fix= verdichtet[1:]
 
-        ausgabe.write(zelle[3] + ", " + zelle[4] + ", " + fix + ", " + airport + ", " + "ZZ\n")
+        ausgabe.write(" " + zelle[3] + " " + zelle[4] + " " + fix + " " + airport + " " + "ZZ 2115159\n")
     ausgabe.write("99\n")
-    ausgabe.close
+    ausgabe.close()
     datei.close()
 
     
